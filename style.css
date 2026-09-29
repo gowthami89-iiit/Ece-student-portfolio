@@ -94,3 +94,50 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:25px 5vw;bord
   footer{flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{transition:none}.cursor-glow{display:none}}
+/* IISc Visit */
+
+.visit-card {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--card);
+}
+
+.visit-intro h3 {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.visit-intro p:last-child {
+  max-width: 700px;
+}
+
+.visit-gallery {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.visit-gallery img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.visit-gallery img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 700px) {
+  .visit-card {
+    padding: 1.2rem;
+  }
+
+  .visit-gallery {
+    grid-template-columns: 1fr;
+  }
+}
